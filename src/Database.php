@@ -13,7 +13,7 @@ class Database
     {
         $conn = new mysqli($this->hostName, $this->user, $this->password, $this->dbName);
 
-        // echo 'connected';
+        echo 'connected';
         return $conn;
     }
 }

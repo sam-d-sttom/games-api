@@ -11,19 +11,19 @@ set_exception_handler("ErrorHandler::handleException");
 
 
 //setting initial end point.
-$uri = explode('/', $_SERVER['REQUEST_URI']);
-var_dump($_SERVER);
+// $uri = explode('/', $_SERVER['REQUEST_URI']);
+// var_dump($_SERVER);
 
-// var_dump($uri);
+// // var_dump($uri);
 
-if($uri[2] != 'games'){
-    http_response_code(404);
-    exit;
-}
+// if($uri[2] != 'games'){
+//     http_response_code(404);
+//     exit;
+// }
 
 header("Content-type: application/json; charset=UTF-8");
 
-$id = $uri[3] ?? null;
+// $id = $uri[3] ?? null;
 
 $database = new Database('localhost', 'sttom', 'qwerty12345', 'games_db');
 
