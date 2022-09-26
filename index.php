@@ -12,7 +12,7 @@ set_exception_handler("ErrorHandler::handleException");
 
 //setting initial end point.
 $uri = explode('/', $_SERVER['REQUEST_URI']);
-var_dump($_SERVER['REQUEST_URI']);
+var_dump($_SERVER);
 
 // var_dump($uri);
 
